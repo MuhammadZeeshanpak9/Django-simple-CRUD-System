@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.google.com/imgres?q=green%20background&imgurl=https%3A%2F%2Fstorage.needpix.com%2Frsynced_images%2Fgreen-background-1480062887P1D.jpg&imgrefurl=https%3A%2F%2Fwww.needpix.com%2Fphoto%2Fdownload%2F1505184%2Fgreen-background-websitebackground-highresolution-highres-gradient-bokeh-design-green-background&docid=wDo--9_KjF-sVM&tbnid=5KVH_M6iqbzFRM&vet=12ahUKEwi7tZSvgJuIAxVygv0HHTFLCzwQM3oECBkQAA..i&w=1920&h=1285&hcb=2&ved=2ahUKEwi7tZSvgJuIAxVygv0HHTFLCzwQM3oECBkQAA'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+}
+
+.container1 {
+    background-color: rgba(0, 0, 0, 0.9); /* White with slight transparency */
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    color: #545353;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid hsla(0, 0%, 80%, 0);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 5px;
+    color: #070606;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #87e91e;
+}
+
+button:active {
+    background-color: #48e836;
+}
+
+/* Table Styles */
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#customers tr:hover {
+    background-color: #f1f1f1;
+}
+
+#customers th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+}
+
+/* Button Styles in Table */
+#customers button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#customers #up {
+    background-color: #4CAF50;
+}
+
+#customers #up:hover {
+    background-color: #45a049;
+}
+
+#customers #del {
+    background-color: #f44336;
+}
+
+#customers #del:hover {
+    background-color: #e53935;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container1 {
+        width: 90%;
+        padding: 15px;
+    }
+}
